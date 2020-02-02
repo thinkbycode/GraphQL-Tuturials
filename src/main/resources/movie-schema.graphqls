@@ -1,0 +1,22 @@
+type Query {
+  stats: Stats!
+  topActorsOfWeek: Actor!
+  movieById(id: Int): Movie
+}
+
+type Stats {
+	movies: Int!
+	documentaries: Int!
+	series: Int!
+}
+
+type Actor {
+   name: String!
+   age: Int
+   rank: Int!
+}
+
+type Movie {
+	name: String!
+	director: String!
+}
